@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Notes - a node.js way</title>
+		<link rel="stylesheet" type='text/css' href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="/javascripts/script.js"></script>
+	</head>
+	<body>
+		<a class="logout" title="logout" href="/logout"><i class="fa fa-sign-out fa-2x"></i></a>
+		<div class="background-blue">
+			<div class="note new-note">
+				<h2>Add a new note</h2>
+				<input type="text" placeholder="title.." name="title" />
+				<hr>
+				<textarea rows="5" type="text" placeholder="note.." name="note"></textarea>
+				<input type="button" value="Save" class="float-right note-create" />
+				<div class="clear"></div>
+			</div>
+		</div>
+		<% for(var i=0; i<notes.length; i++) {%>
+			<div class="note" data-id="<%= notes[i].note_id %>">
+				<p class="title"><%= notes[i].title %></p>
+				<hr>
+				<p class="desc"><%= notes[i].note %></p>
+				<div class="timestamp float-left">
+					<% if(notes[i].updated_timestamp) { %>
+						<span>Updated at : <%= (new Date(notes[i].updated_timestamp)).toUTCString() %></span>
+					<% } %>
+					<span>Created at : <%= (new Date(notes[i].created_timestamp)).toUTCString() %></span> 
+				</div>
+				<div class="actions float-right">
+					<i class="fa fa-pencil-square-o note-edit" title="Edit"></i>
+					<i class="fa fa-trash-o note-delete" title="Delete"></i>
+					<i class="fa fa-check-square-o note-save hide" title="Save"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+    	<% } %>
+	</body>
+</html>

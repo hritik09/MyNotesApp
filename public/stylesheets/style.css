@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+	letter-spacing: 0.7px !important;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	margin-bottom: 40px;
+}
+
+.background-blue {
+	background: #314F6B;
+}
+
+input, textarea {
+	display: block;
+	font-size: 14px;
+	padding: 6px 10px;
+	background: #FFFFFF;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+	cursor: pointer;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear {
+	clear: both; 
+}
+
+.hide {
+	display: none;
+}
+
+h2 {
+	color: #F8F8F8;
+	margin-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*
+=================================
+Login CSS
+=================================
+*/
+
+.login-container{
+	margin: auto;
+	position: absolute;
+	top: 0px; left: 0px; right: 0px; bottom: 0px;
+	width: 450px;
+	height: 220px;
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.login-container h2{
+	text-align: center;
+	font-size: 24px;
+	color: #F8F8F8;
+}
+
+.login-container input{
+	margin: auto;
+	margin-top: 20px;
+	width: 300px;
+}
+
+.login-container input[type="submit"] {
+	border-radius: 0px;
+	border: 0px;
+}
+
+.logout {
+	color: #F8F8F8;
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	background: #314F6B;
+	padding: 10px;
+	padding-left: 13px;
+	border-radius: 100%;
+
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+/*
+================================
+Homepage CSS
+================================
+*/
+
+.home-container {
+	margin: auto;
+	position: absolute;
+	top: 0px; left: 0px; right: 0px; bottom: 0px;
+	width: 560px;
+	height: 200px;
+}
+
+.home-container h1 {
+	color: #F8F8F8;
+	text-align: center;
+	font-size: 28px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.home-container .caption{
+	padding-top: 30px;
+	color: #F8F8F8;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.home-container a {
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	background: none;
+	margin: 10px;
+	border-radius: 3px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s ease;
+}
+
+.home-container a:hover {
+	background: #F8F8F8;
+	color: #314F6B
+}
+
+.home-container .actions {
+	margin: auto;
+	margin-top: 30px;
+	width: 270px;
+}
+
+.note-image{
+	width: 200px;
+}
+
+/*
+================================
+Notes CSS
+================================
+*/
+
+.note{
+	margin: auto;
+	width: 500px;
+	padding: 15px;
+	margin-top: 50px;
+	background: #314F6B;
+	border-radius: 6px;
+	font-family: 'Open Sans', sans-serif;
+
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+
+.new-note{
+	background: none;
+	padding-top: 40px;
+	margin-top: 0px;
+}
+
+.note input[type="text"], .note textarea {
+	width: 100%;
+}
+
+.note input[type="button"] {
+	margin-top: 10px;
+	color: #314F6B;
+	background: #FFFFFF;
+}
+
+.note p {
+	color: #F8F8F8;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.desc{
+	line-height: 120%;
+}
+
+.title {
+	font-size: 16px !important;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.note .actions{
+	margin-top: 10px;
+	color: #FFFFFF;
+}
+
+.actions i {
+	margin-left: 5px;
+}
+
+.actions i:hover {
+	cursor: pointer;
+}
+
+.timestamp {
+	margin-top: 12px;
+	font-size: 10px;
+	color: #F8F8F8;
+}
+
+.timestamp span{
+	margin-right: 10px;
+}
